@@ -3072,7 +3072,7 @@ div#wrapper.open > .offcanvas-mask {
   border-bottom: 1px solid #b2b2b2;
   position: relative;
   text-align: center;
-  height: 50px;
+  height: 10rem;
   display: flex;
   align-items: center;
 }
