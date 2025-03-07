@@ -9024,3 +9024,6 @@ div#wrapper.open > .offcanvas-mask {
 .text-accent {
   color: #082c4b;
 }
+.logo-mobile img {
+    max-width: 50%;
+}
