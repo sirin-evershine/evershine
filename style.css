@@ -95,12 +95,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  color: #646464;
+  color: #000;
   background-color: #ffffff;
 }
 p {
   margin: 0 0 20px 0;
-  color: #646464;
+  color: #000;
 }
 h1,
 h2,
@@ -681,7 +681,14 @@ h6 {
   height: 55px;
   line-height: 55px;
   border-radius: 50%;
-  background-color: #ee212b;
+    background-color: #ee212b;
+  }
+  
+  .why-choose-box-layout1 .item-icon {
+      font-size: 50px;
+      color: #ee212b; /* Adjust the color as needed */
+      margin-bottom: 20px;
+      text-align: center;
   color: #ffffff;
   font-size: 0;
   transition: all 0.5s ease-out;
@@ -1596,9 +1603,20 @@ h6 {
 /*------------------- 3.4 Slick Slider Style -------------------*/
 .slick-slider-layout1 .slick-content .slick-slider .item-img {
   position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   text-align: center;
   margin-bottom: -10px;
 }
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .slick-slider-layout1 .slick-content .slick-slider .item-img .item-content {
   position: absolute;
   top: 50%;
@@ -1685,6 +1703,8 @@ h6 {
 .slick-slider-layout1 .slick-nav-wrap .slick-nav .slick-current .nav-item {
   background-color: #cd0d16;
 }
+
+
 /*=======================================================================
 4. Template Layout Style
 =========================================================================*/
@@ -2112,22 +2132,21 @@ h6 {
 }
 /*------------------- 4.2 Footer -------------------*/
 .footer-wrap-layout1 {
-  background-color: #092d4c;
-  background-image: url('img/figure/footer.png');
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
 }
 .footer-top-wrap-layout1 {
-  padding: 10rem 0 7rem;
+  padding: 3rem 0 3rem;
 }
 .footer-bottom-wrap-layout1 {
-  padding: 2.5rem 1rem;
+  padding: 1rem 1rem;
   border-top: 1px solid #1f3d56;
   text-align: center;
 }
 .footer-bottom-wrap-layout1 .copyright {
-  color: #cccccc;
+  color: #000;
 }
 .footer-bottom-wrap-layout1 .copyright a {
   color: #ffffff;
@@ -2145,12 +2164,13 @@ h6 {
 }
 .footer-box-layout1 .footer-logo {
   margin-bottom: 26px;
+  max-width: 50%;
 }
 .footer-box-layout1 .footer-logo a {
   display: inline-block;
 }
 .footer-box-layout1 p {
-  color: #c5d1dc;
+  color: #000;
   margin-bottom: 45px;
 }
 @media only screen and (min-width: 1199px) {
@@ -2208,7 +2228,7 @@ h6 {
 }
 .footer-box-layout1 .footer-title h3 {
   font-size: 24px;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -2234,7 +2254,7 @@ h6 {
   margin-bottom: 0;
 }
 .footer-box-layout1 .footer-menu-box .footer-menu-list li a {
-  color: #ceced0;
+  color: #000;
   padding: 5px 0;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -2243,7 +2263,7 @@ h6 {
   transition: all 0.3s ease-out;
 }
 .footer-box-layout1 .footer-menu-box .footer-menu-list li a:hover {
-  color: #ffffff;
+  color: #000;
 }
 .footer-box-layout1 .footer-form-box p {
   margin-bottom: 15px;
@@ -2256,13 +2276,13 @@ h6 {
 }
 .footer-box-layout1 .footer-form-box .contact-form-box .form-group input.form-control::-webkit-input-placeholder,
 .footer-box-layout1 .footer-form-box .contact-form-box .form-group textarea.form-control::-webkit-input-placeholder {
-  color: #cccccc;
+  color: #000;
 }
 .footer-box-layout1 .footer-form-box .contact-form-box .form-group .form-control {
   font-size: 16px;
   padding: 10px 30px;
   border: none;
-  color: #ffffff;
+  color: #000;
   border-radius: 4px;
   background-color: #184266;
 }
@@ -2280,7 +2300,7 @@ h6 {
 }
 .footer-box-layout1 .footer-form-box .contact-form-box .form-group .item-btn {
   background-color: #ee212b;
-  color: #ffffff;
+  color: #000;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
@@ -2294,7 +2314,7 @@ h6 {
   transition: all 0.3s ease-out;
 }
 .footer-box-layout1 .footer-form-box .contact-form-box .form-group .item-btn:hover {
-  background-color: #ffffff;
+  background-color: #000;
   color: #111111;
 }
 /*------------------- 4.3 Global -------------------*/
@@ -7041,6 +7061,8 @@ div#wrapper.open > .offcanvas-mask {
 }
 .service-box-layout1 .item-content .item-title {
   margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
 }
 .service-box-layout1 .item-content .item-title a {
   color: #ffffff;
@@ -8664,6 +8686,12 @@ div#wrapper.open > .offcanvas-mask {
   opacity: 1;
   transform: scale(1);
 }
+.why-choose-box-layout1 .item-icon {
+  font-size: 50px;
+  color: #ee212b; /* Adjust the color as needed */
+  margin-bottom: 20px;
+  text-align: left;
+}
 /*=======================================================================
 6. Helper Classes
 =========================================================================*/
@@ -8808,25 +8836,18 @@ div#wrapper.open > .offcanvas-mask {
   z-index: 1;
 }
 .bg-shape-2:after {
-  content: url('img/figure/clip4.png');
+  content: url('img/cliphome.png');
   position: absolute;
   left: 130px;
   bottom: 0;
   line-height: 0;
   z-index: -1;
+  opacity: 0.3;
 }
 @media only screen and (max-width: 991px) {
   .bg-shape-2:after {
     display: none;
   }
-}
-.bg-shape-2:before {
-  content: url('img/figure/clip3.png');
-  position: absolute;
-  right: 190px;
-  bottom: 0;
-  line-height: 0;
-  z-index: -1;
 }
 @media only screen and (max-width: 991px) {
   .bg-shape-2:before {
@@ -8853,7 +8874,7 @@ div#wrapper.open > .offcanvas-mask {
   }
 }
 .bg-shape-3:before {
-  content: url('img/figure/clip3.png');
+  content: url('img/cliphome.png');
   position: absolute;
   right: 190px;
   bottom: 0;
