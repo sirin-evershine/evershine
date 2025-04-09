@@ -145,34 +145,33 @@
                                     <h3 class="mg-b-10">Leave Us a Message</h3>
                                     <p></p>
                                 </div>
-                                <form class="contact-form-box" id="contact-form" netlify>
+                                <form name="contact" method="POST" data-netlify="true">
+                                    <input type="hidden" name="form-name" value="contact">
                                     <div class="row gutters-15">
                                         <div class="col-md-6 col-12 form-group">
-                                            <input type="text" placeholder="Name *" class="form-control" name="name" data-error="Name field is required" required>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="name">Name *</label>
+                                            <input type="text" id="name" name="name" placeholder="Name *" class="form-control" required>
                                         </div>
                                         <div class="col-md-6 col-12 form-group">
-                                            <input type="email" placeholder="E-mail *" class="form-control" name="email" data-error="email field is required" required>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="email">Email *</label>
+                                            <input type="email" id="email" name="email" placeholder="E-mail *" class="form-control" required>
                                         </div>
                                         <div class="col-md-6 col-12 form-group">
-                                            <input type="text" placeholder="Phone *" class="form-control" name="phone" data-error="Phone field is required" required>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="phone">Phone *</label>
+                                            <input type="text" id="phone" name="phone" placeholder="Phone *" class="form-control" required>
                                         </div>
                                         <div class="col-md-6 col-12 form-group">
-                                            <input type="text" placeholder="Subject *" class="form-control" name="subject" data-error="Subject field is required" required>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="subject">Subject *</label>
+                                            <input type="text" id="subject" name="subject" placeholder="Subject *" class="form-control" required>
                                         </div>
                                         <div class="col-12 form-group">
-                                            <textarea placeholder="Comments *" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" 
-                                            data-error="Message field is required" required></textarea>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="message">Message *</label>
+                                            <textarea id="message" name="message" placeholder="Comments *" class="textarea form-control" rows="7" required></textarea>
                                         </div>
                                         <div class="col-12 form-group">
                                             <button type="submit" class="btn-fill-xl bg-Primary text-textprimary border-none">Send Now</button>
                                         </div>
                                     </div>
-                                    <div class="form-response"></div>
                                 </form>
                             </div>
                         </div>
